@@ -1,0 +1,47 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "plans": true,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "overflow": false,
+    "plans": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "plans": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "overflow": false,
+    "plans": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "plans": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "plans": true,
+    "errors": []
+  },
+  {
+    "fixtureFlow": "choose, create, reload, verified payment, WhatsApp, refund",
+    "directSuccessBlocked": true
+  },
+  {
+    "publicCheckout": true,
+    "secureCookie": true,
+    "homepageCheckoutLinks": 0
+  }
+]

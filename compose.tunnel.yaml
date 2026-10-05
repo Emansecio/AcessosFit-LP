@@ -1,0 +1,30 @@
+services:
+  lp:
+    networks:
+      default:
+        aliases:
+          - site
+  tunnel:
+    image: cloudflare/cloudflared@sha256:b269e8abd07a5bf6f3f4be65d5050b2174eca89c56a0241a8ff32a16aec454e4
+    command: ["tunnel", "--config", "/etc/cloudflared/config.yml", "--no-autoupdate", "run", "--token-file", "/run/secrets/tunnel_token"]
+    restart: unless-stopped
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    depends_on:
+      lp:
+        condition: service_healthy
+    volumes:
+      - ./cloudflared.yml:/etc/cloudflared/config.yml:ro
+    secrets:
+      - tunnel_token
+
+secrets:
+  tunnel_token:
+    file: ./secrets/tunnel-token

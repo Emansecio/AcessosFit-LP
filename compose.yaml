@@ -1,0 +1,64 @@
+name: acessosfit-lp
+services:
+  checkout:
+    build: ./checkout
+    restart: unless-stopped
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    volumes:
+      - checkout_data:/data
+    secrets:
+      - sagacepay_key
+    tmpfs:
+      - /tmp
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+  lp:
+    depends_on:
+      checkout:
+        condition: service_healthy
+    build: .
+    ports:
+      - "127.0.0.1:8080:80"
+    restart: unless-stopped
+    read_only: true
+    user: "101:101"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    environment:
+      LOG_RETENTION_DAYS: "30"
+    volumes:
+      - lp_logs:/var/log/nginx/private
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+volumes:
+  checkout_data:
+  lp_logs:
+secrets:
+  sagacepay_key:
+    file: ./secrets/sagacepay-key

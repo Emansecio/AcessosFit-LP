@@ -1,0 +1,11 @@
+secrets/
+
+# Configuração local do Claude Code (prévia em porta local).
+.claude/
+
+# Cópia da documentação do SagacePay: material de terceiros, com chaves de exemplo que disparam o bloqueio de segredos do GitHub.
+qa/sagacepay-docs.*
+
+__pycache__/
+*.pyc
+node_modules/

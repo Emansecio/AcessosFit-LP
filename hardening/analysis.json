@@ -1,0 +1,271 @@
+{
+  "input_sha256": "bf9adf7f14a2e52cd68baa260b836159ba75adf9196b7256caed7d42097b585b",
+  "records": 10174,
+  "period": [
+    "2026-09-03T21:57:19.977Z",
+    "2026-09-20T04:58:28.365Z"
+  ],
+  "access_period": [
+    "2026-09-17T05:16:14.457Z",
+    "2026-09-20T04:58:28.365Z"
+  ],
+  "objects": {
+    "webhostlp/tunnel": 173,
+    "webhostlp/site": 10001
+  },
+  "parsed_access": 9993,
+  "other_site_events": 8,
+  "status": {
+    "301": 8191,
+    "200": 1446,
+    "304": 45,
+    "404": 310,
+    "206": 1
+  },
+  "categories": {
+    "consulta_local": {
+      "count": 7927,
+      "status": {
+        "301": 7927
+      }
+    },
+    "indeterminado_ou_compativel_com_uso_normal": {
+      "count": 1762,
+      "status": {
+        "301": 195,
+        "200": 1446,
+        "304": 45,
+        "404": 75,
+        "206": 1
+      }
+    },
+    "sondagem_configuracao_credenciais_backup": {
+      "count": 175,
+      "status": {
+        "301": 67,
+        "404": 108
+      }
+    },
+    "sondagem_sistemas_e_frameworks": {
+      "count": 129,
+      "status": {
+        "301": 2,
+        "404": 127
+      }
+    }
+  },
+  "cases": [
+    {
+      "origin_alias": "Origem 01",
+      "from": "2026-09-17T17:16:24.586Z",
+      "to": "2026-09-17T18:01:19.881Z",
+      "requests_total": 135,
+      "suspicious_requests": 126,
+      "suspicious_status": {
+        "301": 66,
+        "404": 60
+      },
+      "sample_paths": [
+        "/admin/auth.json",
+        "/api/auth.json",
+        "/app/auth.json",
+        "/appsettings.json",
+        "/appsettings.production.json",
+        "/assets/credentials.json",
+        "/auth.json",
+        "/azure.json"
+      ],
+      "evidence_records": [
+        2045,
+        2046,
+        2048,
+        2049,
+        2050,
+        2053,
+        2055,
+        2056
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    },
+    {
+      "origin_alias": "Origem 02",
+      "from": "2026-09-18T07:48:01.053Z",
+      "to": "2026-09-18T07:48:01.920Z",
+      "requests_total": 3,
+      "suspicious_requests": 3,
+      "suspicious_status": {
+        "301": 1,
+        "404": 2
+      },
+      "sample_paths": [
+        "/api/session/properties"
+      ],
+      "evidence_records": [
+        4373,
+        4374,
+        4375
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    },
+    {
+      "origin_alias": "Origem 03",
+      "from": "2026-09-18T13:51:37.795Z",
+      "to": "2026-09-18T14:53:25.009Z",
+      "requests_total": 32,
+      "suspicious_requests": 26,
+      "suspicious_status": {
+        "404": 26
+      },
+      "sample_paths": [
+        "/phpinfo",
+        "/info",
+        "/_environment",
+        "/sa.json",
+        "/gcp-key.json",
+        "/gcp-credentials.json",
+        "/gcp-sa.json",
+        "/google-key.json"
+      ],
+      "evidence_records": [
+        5317,
+        5318,
+        5319,
+        5320,
+        5321,
+        5322,
+        5323,
+        5324
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    },
+    {
+      "origin_alias": "Origem 04",
+      "from": "2026-09-18T19:32:56.765Z",
+      "to": "2026-09-18T19:57:21.069Z",
+      "requests_total": 10,
+      "suspicious_requests": 8,
+      "suspicious_status": {
+        "404": 8
+      },
+      "sample_paths": [
+        "/api/v1/version",
+        "/geoserver/ows",
+        "/geoserver/wfs",
+        "/ows",
+        "/wfs",
+        "/geoserver/web/"
+      ],
+      "evidence_records": [
+        6340,
+        6341,
+        6342,
+        6343,
+        6344,
+        6346,
+        6347,
+        6348
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    },
+    {
+      "origin_alias": "Origem 05",
+      "from": "2026-09-19T05:42:12.948Z",
+      "to": "2026-09-19T05:44:41.278Z",
+      "requests_total": 143,
+      "suspicious_requests": 115,
+      "suspicious_status": {
+        "404": 115
+      },
+      "sample_paths": [
+        "/wp/v2/posts/999999",
+        "/wp/v2/pages",
+        "/wp/v2/media",
+        "/wp/v2/categories",
+        "/wp/v2/tags",
+        "/wp/v2/posts/999998",
+        "/wp/v2/posts/99999",
+        "/wp/v2/posts/9999999"
+      ],
+      "evidence_records": [
+        7741,
+        7743,
+        7745,
+        7747,
+        7749,
+        7751,
+        7753,
+        7755
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    },
+    {
+      "origin_alias": "Origem 06",
+      "from": "2026-09-19T09:58:26.905Z",
+      "to": "2026-09-19T09:58:53.189Z",
+      "requests_total": 9,
+      "suspicious_requests": 7,
+      "suspicious_status": {
+        "404": 7
+      },
+      "sample_paths": [
+        "/aws-config.js",
+        "/aws.config.js",
+        "/_debugbar/",
+        "/debugbar/",
+        "/debug/",
+        "/aws-credentials",
+        "/aws.json"
+      ],
+      "evidence_records": [
+        8410,
+        8411,
+        8412,
+        8414,
+        8415,
+        8416,
+        8417
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    },
+    {
+      "origin_alias": "Origem 07",
+      "from": "2026-09-19T12:36:56.353Z",
+      "to": "2026-09-19T12:37:05.578Z",
+      "requests_total": 16,
+      "suspicious_requests": 13,
+      "suspicious_status": {
+        "404": 13
+      },
+      "sample_paths": [
+        "/phpinfo",
+        "/info",
+        "/_environment",
+        "/sa.json",
+        "/gcp-key.json",
+        "/gcp-credentials.json",
+        "/gcp-sa.json",
+        "/google-key.json"
+      ],
+      "evidence_records": [
+        8755,
+        8756,
+        8757,
+        8758,
+        8759,
+        8760,
+        8761,
+        8762
+      ],
+      "scope": "Sequência compatível com varredura; não identifica pessoa nem comprova exploração."
+    }
+  ],
+  "limitations": [
+    "Host não registrado: subdomínios não confirmáveis.",
+    "Corpos de requisição e resposta ausentes.",
+    "User-Agent não autentica bot nem identidade.",
+    "HTTP 301 não comprova acesso ao arquivo; 200 de página pública não comprova exploração.",
+    "IPs do peer são majoritariamente proxy interno; agrupamento usa cf_ip quando presente, confiabilidade histórica não comprovada.",
+    "Classificação por caminho é heurística; origem não equivale a pessoa e o mesmo IP pode ser compartilhado.",
+    "A origem antiga era Apache/PHP; a atual é Nginx estático."
+  ]
+}

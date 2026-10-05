@@ -1,0 +1,7 @@
+tunnel: d0b55844-4f2e-4ec2-b122-0dc5b77ba837
+ingress:
+  - hostname: acessosfitness.online
+    service: http://site:80
+  - hostname: www.acessosfitness.online
+    service: http://site:80
+  - service: http_status:404

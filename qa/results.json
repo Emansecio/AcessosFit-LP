@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-21T16:16:00.070Z",
+  "engine": "Edge Chromium headless",
+  "results": [
+    {
+      "width": 320,
+      "overflow": false,
+      "faqKeyboard": true,
+      "whatsappLinks": 9
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "faqKeyboard": true,
+      "whatsappLinks": 9
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "faqKeyboard": true,
+      "whatsappLinks": 9
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "faqKeyboard": true,
+      "whatsappLinks": 9
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "faqKeyboard": true,
+      "whatsappLinks": 9
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "faqKeyboard": true,
+      "whatsappLinks": 9
+    }
+  ],
+  "errors": [],
+  "noJavaScript": true
+}

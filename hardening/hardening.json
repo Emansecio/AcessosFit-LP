@@ -1,0 +1,40 @@
+{
+  "documentType": "codex-security.hardening-analysis",
+  "schemaVersion": "1.0",
+  "analysisId": "acessosfit_logs_20260921",
+  "sourceEvidence": {
+    "kind": "document_collection",
+    "label": "Exportação histórica Docker Apache e túnel",
+    "collectionSha256": "bf9adf7f14a2e52cd68baa260b836159ba75adf9196b7256caed7d42097b585b",
+    "artifactCount": 1,
+    "sourceDrift": "present"
+  },
+  "assessment": {
+    "outcome": "local_remediation_preferred",
+    "summary": "Varreduras históricas justificam controles locais e complemento de WAF, sem redesenho da arquitetura nem conclusão de comprometimento."
+  },
+  "constraints": {
+    "profile": "balanced",
+    "nonNegotiables": [
+      "Preservar acesso à LP e WhatsApp",
+      "Não classificar erro isolado como ataque",
+      "Preservar proteções anteriores",
+      "Não divulgar IPs, queries ou credenciais"
+    ],
+    "assumptions": [
+      "LP atual estática, sem endpoints de escrita."
+    ]
+  },
+  "opportunities": [],
+  "implementation": {
+    "status": "implemented_and_tested",
+    "report": "RELATORIO.md",
+    "verification": "verification.json",
+    "edgeRuleId": "544ed96ef805422f8cce7b9a66559b32"
+  },
+  "openQuestions": [
+    "Subdomínios históricos não identificáveis no CSV.",
+    "Não há prova de exploração nem dados suficientes para descartá-la globalmente.",
+    "Aceitação real por verificadores Google Ads não testada."
+  ]
+}

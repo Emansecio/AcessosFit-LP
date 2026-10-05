@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!nginx.conf
+!nginx-main.conf
+!nginx-logrotate.conf
+!nginx-start.sh
+!site/
+!site/**

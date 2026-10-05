@@ -1,0 +1,212 @@
+[
+  {
+    "url": "http://127.0.0.1:8080/app.js",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/index.html",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/styles.css",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/academia-1280.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/academia-480.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/academia-800.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/checkin-1280.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/checkin-480.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/checkin-800.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/entrada-1280.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/entrada-480.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/entrada-800.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/favicon.svg",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/treino-1280.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/treino-480.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/treino-800.webp",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/comprar/checkout.css",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/comprar/checkout.js",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/comprar",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/secrets/tunnel-token",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/.env",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/.git/config",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/backup.zip",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/comprar/checkout.php",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/hardening/analysis.json",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/assets/not-published.json",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/",
+    "method": "GET",
+    "status": 404
+  },
+  {
+    "url": "http://127.0.0.1:8080/",
+    "method": "POST",
+    "status": 405
+  },
+  {
+    "url": "http://127.0.0.1:8080/",
+    "method": "HEAD",
+    "status": 200
+  },
+  {
+    "url": "http://127.0.0.1:8080/",
+    "method": "GET",
+    "status": 200
+  },
+  {
+    "privacy_marker_omitted": true
+  },
+  {
+    "url": "https://acessosfitness.online/",
+    "method": "GET",
+    "status": 200,
+    "client": "PowerShell"
+  },
+  {
+    "url": "https://acessosfitness.online/robots.txt",
+    "method": "GET",
+    "status": 200,
+    "client": "PowerShell"
+  },
+  {
+    "url": "https://acessosfitness.online/styles.css",
+    "method": "GET",
+    "status": 200,
+    "client": "PowerShell"
+  },
+  {
+    "url": "https://www.acessosfitness.online/",
+    "method": "GET",
+    "status": 200,
+    "client": "PowerShell"
+  },
+  {
+    "url": "https://www.acessosfitness.online/robots.txt",
+    "method": "GET",
+    "status": 200,
+    "client": "PowerShell"
+  },
+  {
+    "url": "https://www.acessosfitness.online/styles.css",
+    "method": "GET",
+    "status": 200,
+    "client": "PowerShell"
+  },
+  {
+    "url": "https://acessosfitness.online/debug/qa-edge-1790007336",
+    "method": "GET",
+    "status": 403,
+    "client": "PowerShell"
+  },
+  {
+    "edge_blocked_before_origin": true
+  },
+  {
+    "container": "/acessosfit-lp-lp-1",
+    "read_only": true,
+    "no_new_privileges": true,
+    "log_rotation": true
+  },
+  {
+    "container": "/acessosfit-lp-tunnel-1",
+    "read_only": true,
+    "no_new_privileges": true,
+    "log_rotation": true
+  }
+]
